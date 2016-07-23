@@ -4,6 +4,8 @@ var methodOverride = require('method-override')
 
 var app = express();
 
+
+
 app.use(express.static(__dirname + '/public'));
 
 
@@ -24,7 +26,7 @@ app.use('/', routes);
 app.use('/update', routes);
 app.use('/create', routes);
 
-var port = 7001;
+var port = 8000;
 app.listen(port);
 
 console.log(module.exports)
